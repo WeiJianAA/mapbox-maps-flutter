@@ -195,6 +195,10 @@ class MapboxMap extends ChangeNotifier {
   late AttributionSettingsInterface attribution =
       AttributionSettingsInterface(binaryMessenger: _proxyBinaryMessenger);
 
+  late MapSnapshot snapshot = MapSnapshot(binaryMessenger: _proxyBinaryMessenger);
+
+  late MapSnapshotter snapshotter = MapSnapshotter(binaryMessenger: _proxyBinaryMessenger);
+
   final OnMapTapListener? onMapTapListener;
   final OnMapLongTapListener? onMapLongTapListener;
   final OnMapScrollListener? onMapScrollListener;
